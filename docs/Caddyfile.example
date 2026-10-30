@@ -1,0 +1,11 @@
+# Install Caddy from its official repository. Replace the domain before use.
+# The API is published by Compose only on localhost.
+luna.example.com {
+    encode zstd gzip
+    header {
+        X-Content-Type-Options nosniff
+        Referrer-Policy no-referrer
+        Strict-Transport-Security "max-age=31536000"
+    }
+    reverse_proxy 127.0.0.1:8000
+}
