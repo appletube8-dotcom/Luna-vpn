@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#08090b">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Luna VPN — эскиз движения: от полной Луны к кратерам и обратно к личному подключению.">
+  <title>LUNA VPN — движение к деталям</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='%23e9e1d2'/%3E%3C/svg%3E">
+  <link rel="preload" href="../preview/assets/CormorantGaramond.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/crater-surface.webp" as="image">
+  <link rel="stylesheet" href="motion.css">
+  <script src="../config.js" defer></script>
+  <script src="motion.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#story">К содержанию</a>
+  <main>
+    <section class="story" id="story" aria-label="Luna VPN: от полной Луны к деталям подключения">
+      <div class="stage" id="stage" data-scene="hero">
+        <header class="header">
+          <a href="#story" class="brand" aria-label="Luna VPN, начало">LUNA<span>VPN</span></a>
+          <nav aria-label="Разделы эскиза"><button type="button" data-seek="0">О сервисе</button><button type="button" data-seek="0.51">В деталях</button><button type="button" data-seek="0.96">Ваш VPN</button></nav>
+          <span class="study">МОУШЕН-ЭСКИЗ</span>
+        </header>
+
+        <div class="world" aria-hidden="true">
+          <div class="orb" id="orb"><div class="orb-surface"><img src="../preview/assets/artist-moon.webp" width="1254" height="1254" alt="" fetchpriority="high"></div></div>
+          <div class="terrain" id="terrain"><img src="assets/crater-surface.webp" width="1672" height="941" alt=""></div>
+          <div class="terrain-shade" id="terrain-shade"></div>
+          <div class="copy-shade" id="copy-shade"></div>
+        </div>
+
+        <div class="copy hero-copy" id="hero-copy">
+          <p class="eyebrow">LUNA VPN · КАЖДЫЙ ДЕНЬ</p>
+          <h1>Ваше личное<br><em>пространство.</em></h1>
+          <p class="description">VPN для работы, общения<br>и любимых сервисов.</p>
+          <button class="primary" type="button" data-action="connect">Подключить VPN <span aria-hidden="true">↗</span></button>
+          <p class="signature">ВАШ ДЕНЬ. ВАША СВЯЗЬ. ВАША LUNA.</p>
+        </div>
+
+        <div class="copy detail-copy" id="detail-copy" inert aria-hidden="true">
+          <p class="eyebrow">БЛИЖЕ К ВАШЕМУ ДНЮ</p>
+          <h2>Внимание<br>к <em>деталям.</em></h2>
+          <p class="description">От первого подключения<br>до ежедневного использования.</p>
+          <span class="small-rule"></span>
+          <p class="detail-note">ЛИЧНЫЙ ДОСТУП · ПОМОЩЬ С НАСТРОЙКОЙ</p>
+        </div>
+
+        <div class="copy account-copy" id="account-copy" inert aria-hidden="true">
+          <p class="eyebrow">LUNA VPN · ЛИЧНЫЙ КАБИНЕТ</p>
+          <h2>Ваш VPN.<br>Всё <em>под рукой.</em></h2>
+          <p class="description">Подписка, личная ссылка и помощь<br>в Telegram-кабинете Luna.</p>
+          <button class="primary" type="button" data-action="cabinet">Открыть кабинет <span aria-hidden="true">↗</span></button>
+        </div>
+
+        <aside class="account" id="account-panel" aria-label="Концепция личного кабинета" inert aria-hidden="true">
+          <div class="account-head"><span class="mini-moon"><img src="../preview/assets/artist-moon.webp" alt="" width="48" height="48"></span><div>LUNA VPN<small>Личный кабинет</small></div></div>
+          <h3>Ваше подключение</h3>
+          <button class="account-row" type="button" data-action="plan"><span class="row-icon" aria-hidden="true">＋</span><span>Подписка<small>Выбрать план</small></span><span aria-hidden="true">›</span></button>
+          <button class="account-row" type="button" data-action="instruction"><span class="row-icon" aria-hidden="true">↗</span><span>Подключение<small>Инструкция</small></span><span aria-hidden="true">›</span></button>
+          <button class="primary account-primary" type="button" data-action="connect">Получить доступ <span aria-hidden="true">↗</span></button>
+          <button class="support" type="button" data-action="support">Поддержка <span aria-hidden="true">↗</span></button>
+          <p class="account-caption">КОНЦЕПЦИЯ КАБИНЕТА</p>
+        </aside>
+
+        <footer class="stage-footer">
+          <button class="play" type="button" id="play" aria-pressed="false"><span aria-hidden="true" class="play-icon">▷</span><span id="play-label">Смотреть переход</span></button>
+          <div class="chapters" role="group" aria-label="Кадры перехода"><button type="button" data-seek="0" aria-pressed="true"><span>01</span> ЛУНА</button><button type="button" data-seek="0.51" aria-pressed="false"><span>02</span> КРАТЕРЫ</button><button type="button" data-seek="0.96" aria-pressed="false"><span>03</span> ВАШ VPN</button></div>
+          <span class="scroll-hint">ПРОКРУТИТЕ <span aria-hidden="true">↓</span></span>
+          <div class="progress-track" aria-hidden="true"><span id="progress"></span></div>
+        </footer>
+        <p class="sr-only" id="scene-status" role="status" aria-live="polite">Первый кадр: полная Луна и Luna VPN.</p>
+      </div>
+    </section>
+    <footer class="end"><p>LUNA VPN <span>·</span> От первого подключения до ежедневного использования.</p><button type="button" data-seek="0">К началу <span aria-hidden="true">↑</span></button></footer>
+  </main>
+  <dialog id="dialog" aria-labelledby="dialog-title"><button class="dialog-close" type="button" aria-label="Закрыть">×</button><p class="eyebrow">LUNA VPN</p><h2 id="dialog-title"></h2><div id="dialog-content"></div><button class="dialog-return" type="button">Вернуться к эскизу</button></dialog>
+  <noscript><style>.story{height:auto}.stage{position:relative;min-height:850px}.orb{width:650px;height:650px;left:50%;top:160px;opacity:.65}.hero-copy{opacity:1}.stage-footer{display:none}@media(max-width:700px){.orb{width:450px;height:450px;left:-40px;top:80px}.hero-copy{top:410px;transform:none}}</style><p style="padding:24px">Для просмотра движения включите JavaScript. Luna VPN — VPN для работы, общения и любимых сервисов.</p></noscript>
+</body>
+</html>
